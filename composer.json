@@ -1,0 +1,47 @@
+{
+  "name": "kalvi/nfse",
+  "description": "Cliente PHP da API Kalvi: classifica e confere a NFS-e do padrão nacional para IBS/CBS antes de transmitir.",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "nfse",
+    "nfse-nacional",
+    "ibs",
+    "cbs",
+    "dps",
+    "reforma-tributaria",
+    "nota-fiscal-de-servico",
+    "cclasstrib",
+    "cst",
+    "fiscal"
+  ],
+  "homepage": "https://kalvi.com.br",
+  "support": {
+    "docs": "https://kalvi.com.br/docs",
+    "issues": "https://kalvi.com.br/docs/api/erros"
+  },
+  "require": {
+    "php": ">=8.1",
+    "ext-curl": "*",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^10.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Kalvi\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Kalvi\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "phpunit"
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
